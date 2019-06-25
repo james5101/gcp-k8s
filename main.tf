@@ -1,6 +1,6 @@
 provider "google" {
- credentials = "${file("k8s-node-224301-737b6d94efa1.json")}"
- project     = "k8s-node-224301"
+ credentials = "${file("james-app-dev-a54b31ddc341.json")}"
+ project     = "james-app-dev"
  region      = "us-east1"
 }
 
