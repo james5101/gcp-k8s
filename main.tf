@@ -1,6 +1,6 @@
 provider "google" {
- credentials = "${file("k8s-node-224301-737b6d94efa1.json")}"
- project     = "k8s-node-224301"
+ credentials = "${file("james-app-dev-a54b31ddc341.json")}"
+ project     = "james-app-dev"
  region      = "us-east1"
 }
 
@@ -16,6 +16,8 @@ resource "google_container_cluster" "gcp_kubernetes" {
         username = "${var.linux_admin_username}"
         password = "${var.linux_admin_password}}"
     }
+
+    addsome stuff
     node_config {
         oauth_scopes = [
           "https://www.googleapis.com/auth/compute",
