@@ -18,6 +18,7 @@ resource "google_container_cluster" "gcp_kubernetes" {
     }
 
     add a line
+    add second line
     node_config {
         oauth_scopes = [
           "https://www.googleapis.com/auth/compute",
