@@ -17,13 +17,7 @@ resource "google_container_cluster" "gcp_kubernetes" {
         password = "${var.linux_admin_password}}"
     }
 
-    add a line
-<<<<<<< HEAD
-    add second line
-=======
-
-    add some stuff
->>>>>>> add some stuff
+   
     node_config {
         oauth_scopes = [
           "https://www.googleapis.com/auth/compute",
